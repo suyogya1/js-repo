@@ -50,3 +50,25 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+var person = prompt("Enter your role: ");
+if (person == "Employee"){
+    person_role = "Access to Dietary Service!";
+}
+else if (person == "Enrolled Member"){
+    person_role = "Access to Dietary Services and One-on-One interactions with a dietician.";
+}
+else if(person == "Subscriber"){
+    person_role = "Partial Access to facilitate Dietary Services only.";
+}
+else if (person == "Non-Subscriber"){
+    person_role = "Need to enroll or at least subscribe first to avail this facility.";
+}
+else {
+    console.log("Enter a valid role!")
+}
+console.log("Role :", person_role);
+
+let status = prompt("True or False: ")
+
+let employee_status = status ? "Authenticated" : "Not authenticated";
